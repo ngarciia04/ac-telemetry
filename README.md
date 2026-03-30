@@ -64,7 +64,7 @@ Para ejecutar este proyecto en tu entorno local (recomendado usar **Laravel Herd
    npm run dev
 
 <div align="center">
-<p>Desarrollado con pasión por el código y el motor por <b>Nacho García</b></p>
+<p><b>Nacho García</b></p>
 <a href="https://www.google.com/search?q=https://github.com/ngarciia04">Visitar mi Perfil</a>
 </div>
    
