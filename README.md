@@ -1,4 +1,4 @@
-# 🏎️ AC Telemetry Pro
+# 🏎️ Assetto Corsa Telemetry
 
 <p align="left">
   <img src="https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/uPlot-Charts-blue?style=for-the-badge" alt="uPlot">
 </p>
 
-**AC Telemetry Pro** es una plataforma de análisis de datos en tiempo real diseñada para SimRacing (Assetto Corsa y otros). Permite a los pilotos visualizar su telemetría de forma profesional, comparar vueltas y detectar errores en la trazada mediante un mapa dinámico sincronizado.
+**Assetto Corsa Telemetry** es una plataforma de análisis de datos en tiempo real diseñada para Assetto Corsa. Permite a los pilotos visualizar su telemetría de forma profesional, comparar vueltas y detectar errores en la trazada mediante un mapa dinámico sincronizado.
 
 ---
 
