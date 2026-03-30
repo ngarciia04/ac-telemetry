@@ -46,16 +46,21 @@ Para ejecutar este proyecto en tu entorno local (recomendado usar **Laravel Herd
 
 2. **Instalar dependencias de PHP:**
    composer install
+   ```bash
+   composer install
 
 3. **Instalar dependencias de JS:**
+   ```bash
    npm install
    
-5. **Preparar el entorno:**
-    cp .env.example .env
-    php artisan key:generate
-    php artisan migrate
+4. **Preparar el entorno:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   php artisan migrate
    
-6. **Lanzar aplicacion: **
+5. **Lanzar aplicacion: **
+   ```bash
    npm run dev
 
 <div align="center">
