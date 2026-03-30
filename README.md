@@ -65,6 +65,6 @@ Para ejecutar este proyecto en tu entorno local (recomendado usar **Laravel Herd
 
 <div align="center">
 <p><b>Nacho García</b></p>
-<a href="https://www.google.com/search?q=https://github.com/ngarciia04">Visitar mi Perfil</a>
+<a href="https://github.com/ngarciia04">Visitar mi Perfil</a>
 </div>
    
