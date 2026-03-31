@@ -1,58 +1,70 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏎️ Assetto Corsa Telemetry
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<p align="left">
+  <img src="https://img.shields.io/badge/Laravel-11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white" alt="Vue">
+  <img src="https://img.shields.io/badge/Tailwind-CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+  <img src="https://img.shields.io/badge/uPlot-Charts-blue?style=for-the-badge" alt="uPlot">
 </p>
 
-## About Laravel
+**Assetto Corsa Telemetry** es una plataforma de análisis de datos en tiempo real diseñada para Assetto Corsa. Permite a los pilotos visualizar su telemetría de forma profesional, comparar vueltas y detectar errores en la trazada mediante un mapa dinámico sincronizado.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🔥 Características Principales
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* **📊 Gráficas de Alto Rendimiento:** Visualización ultra fluida de Velocidad, RPM, Acelerador y Freno mediante `uPlot` (Canvas).
+* **🗺️ Trackmap Dinámico:** Generación automática del trazado del circuito a partir de las coordenadas GPS (X, Z) del coche.
+* **🧹 Algoritmo Anti-Glitch:** Filtro inteligente que elimina saltos de telemetría y "picos" de datos corruptos en la línea de meta.
+* **🔍 Zoom Sincronizado:** Al ampliar una zona de la gráfica para analizar una frenada, el sector correspondiente se resalta automáticamente en el mapa.
+* **🏁 Comparativa de Vueltas:** Superposición de dos vueltas distintas para analizar diferencias de velocidad y puntos de frenada.
+* **📂 Procesamiento Local:** Lectura instantánea de archivos CSV masivos en el navegador usando `PapaParse`.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 🛠️ Stack Tecnológico
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+| Componente | Tecnología |
+| :--- | :--- |
+| **Backend** | Laravel 11 (PHP 8.2+) |
+| **Frontend** | Vue 3 (Composition API) |
+| **Comunicación** | Inertia.js |
+| **Gráficos** | uPlot (Motor Canvas de alto rendimiento) |
+| **Base de Datos** | SQLite (Soporta MySQL/PostgreSQL) |
+| **Estilos** | Tailwind CSS (Dark Mode) |
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+---
 
-## Agentic Development
+## 🚀 Instalación y Configuración
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+Para ejecutar este proyecto en tu entorno local (recomendado usar **Laravel Herd**):
 
-```bash
-composer require laravel/boost --dev
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/ngarciia04/ac-telemetry.git](https://github.com/ngarciia04/ac-telemetry.git)
+   cd ac-telemetry
 
-php artisan boost:install
-```
+2. **Instalar dependencias de PHP:**
+   composer install
+   ```bash
+   composer install
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+3. **Instalar dependencias de JS:**
+   ```bash
+   npm install
+   
+4. **Preparar el entorno:**
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   php artisan migrate
+   
+5. **Lanzar aplicacion: **
+   ```bash
+   npm run dev
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div align="center">
+<p><b>Nacho García</b></p>
+<a href="https://github.com/ngarciia04">Visitar mi Perfil</a>
+</div>
+   

@@ -4,6 +4,12 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\TelemetryController;
+
+Route::post('/telemetry/upload', [TelemetryController::class, 'store'])->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
+Route::get('/telemetry/sessions', [TelemetryController::class, 'index']);
+Route::get('/telemetry/{telemetry}', [TelemetryController::class, 'show']);
+
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [
